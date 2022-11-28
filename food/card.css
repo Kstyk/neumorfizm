@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #eeedf3;
+}
+
+.image {
+  margin: 0;
+  padding: 0;
+  display: block;
+  overflow: auto;
+  background-color: #eeedf3;
+}
+
+.image img {
+  border-radius: 0 0 60px 60px;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.content {
+  background-color: #eeedf3;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.content h1 {
+  margin: 0;
+  padding-top: 40px;
+  padding: 0;
+  color: #444444;
+  font-size: 21px;
+}
+
+.content h1::first-letter {
+  color: orange;
+}
+
+.text {
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  color: rgb(168, 163, 163);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.tags div {
+  height: 35px;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #e5e5e8;
+  border-radius: 10px;
+  box-shadow: 6px 6px 30px #afb0b3, -6px -6px 16px #ffffff;
+  font-size: 14px;
+}
+
+.describe {
+  color: rgb(115, 110, 110);
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.health {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+}
+
+.health .item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.health .item .title {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.health .item .value {
+  font-size: 17px;
+}
+
+.health .item .unit {
+  color: orange;
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: bold;
+}
+
+.health .border {
+  height: 50%;
+  border-right: 1px solid orange;
+}
+
+.buttons .total {
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+  padding-top: 40px;
+  background-color: rgb(210, 138, 5);
+  color: white;
+  justify-content: space-between;
+  padding-left: 8%;
+  padding-right: 8%;
+  font-size: 25px;
+  border-radius: 40px 40px 0 0;
+}
+
+.buttons .total .buttons {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.buttons .total .buttons .plus,
+.minus {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  box-shadow: 3px 3px 8px #00000094, -1px -1px 8px #ffffff;
+  border-radius: 10px;
+}
+
+.addtobag {
+  background-color: #eeedf3;
+  height: 150px;
+  border-radius: 40px 40px 0 0;
+  margin-top: -100px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.addtobag img {
+  height: 35px;
+}
+
+.addtobag span {
+  font-weight: bold;
+  font-size: 25px;
+}
