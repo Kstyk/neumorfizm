@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+.title {
+  width: 100%;
+  height: 8%;
+  background-color: #2b2042;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title h1 {
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  opacity: 0.5;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  height: 91.5%;
+  background-color: #221b3b;
+  padding-top: 0.5%;
+}
+
+.left {
+  width: 40%;
+  min-height: 100%;
+  background-color: #2b2042;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.left .header {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 0;
+  height: 10%;
+  align-items: center;
+}
+
+.left .header li {
+  color: white;
+  font-size: 13px;
+  padding-bottom: 15px;
+  text-align: left;
+  padding-right: 10px;
+}
+
+.left .header .active {
+  border-bottom: 4px solid #8472fc;
+}
+
+.left .header .active span {
+  color: #8472fc;
+  opacity: 1;
+}
+
+.left .header li .plus {
+  height: 50px;
+  width: 50px;
+  background: linear-gradient(145deg, #503d64, #382b46);
+  border-radius: 100%;
+  box-shadow: 2.1px 2.1px 27px #362944, -2.1px -2.1px 10px #523f66;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+.left .header li span {
+  color: white;
+  opacity: 0.3;
+}
+
+.left .message {
+  height: 15vh;
+  width: 90%;
+  background: rgb(63, 46, 77);
+  background: linear-gradient(
+    90deg,
+    rgba(63, 46, 77, 1) 33%,
+    rgba(54, 41, 76, 1) 68%
+  );
+  border-radius: 5px;
+
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+.left .person {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50px;
+  justify-content: space-between;
+}
+
+.leftSide {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.left .person .image {
+  width: 50px;
+  height: 100%;
+}
+
+.left .person .image img {
+  border-radius: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.left .person .name h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 17px;
+  color: white;
+  opacity: 0.1;
+  text-transform: uppercase;
+}
+
+.left .person .name span {
+  color: white;
+  font-size: 13px;
+  opacity: 0.4;
+}
+
+.right {
+  width: 60%;
+  min-height: 100%;
+  background: rgb(48, 34, 63);
+  background: linear-gradient(
+    0deg,
+    rgba(48, 34, 63, 1) 22%,
+    rgba(37, 29, 63, 1) 98%
+  );
+}
