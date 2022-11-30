@@ -215,7 +215,7 @@ html {
   justify-content: space-between;
   padding-left: 5%;
   padding-right: 5%;
-  height: 15vh;
+  height: 15%;
   align-items: center;
 }
 
@@ -282,4 +282,115 @@ html {
 
 .border2 {
   border-bottom: 1px solid rgb(64, 45, 84);
+}
+
+/* messages */
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3vh;
+  height: 80%;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.messages::-webkit-scrollbar {
+  display: none;
+}
+
+.yours {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+
+.messages .image {
+  height: 50px;
+  width: 50px;
+  box-shadow: 2.1px 2.1px 33px #1b1324, -2.1px -2.1px 33px #624e78;
+  border-radius: 100%;
+  border: 7px solid rgb(67, 48, 86);
+}
+
+.messages .image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+}
+
+.messages .yours svg {
+  margin-left: -15px;
+  margin-bottom: -10px;
+  z-index: 3;
+}
+
+.messages .yours .contentMessage {
+  height: 60px;
+  color: white;
+  background: rgb(37, 29, 63);
+  background: linear-gradient(90deg, rgb(50, 41, 82) 0%, rgb(67, 48, 86) 100%);
+  border-radius: 5%;
+
+  display: flex;
+  align-items: center;
+
+  padding-left: 5%;
+  padding-right: 2%;
+  margin-left: -30px;
+  width: 30%;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+
+  box-shadow: 2.1px 2.1px 27px #150f1c, -5.1px -5.1px 30px #624e78;
+}
+
+.messages .yours .contentMessage p {
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.messages .mine {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+.messages .mine .contentMessage {
+  order: 1;
+  background-color: #8472fc;
+  color: white;
+  border-radius: 5%;
+
+  display: flex;
+  align-items: center;
+
+  padding-right: 5%;
+  padding-left: 2%;
+  margin-right: -30px;
+  width: 30%;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.messages .mine .contentMessage p {
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.messages .mine svg {
+  order: 2;
+  margin-right: -15px;
+  margin-bottom: -10px;
+  z-index: 3;
+}
+
+.messages .mine .image {
+  order: 3;
+  border: 7px solid #8472fc;
 }
